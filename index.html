@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CTF Questions</title>
+	<link href="images/globe.png" rel="icon" type="images/ico">
+	<link href="https://fonts.googleapis.com/css?family=Aldrich|Bungee+Hairline|Chathura|Orbitron" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<!-- start of navigation -->
+		<nav id="nav-bar">
+			<center>
+				<a href="#"><i class="fa fa-home fa-2x" aria-hidden="true" id="home-page-icon"></i></a>
+				<button type="type" id="register"><a href="#" class="button">Register</a></button>
+				<button type="button" id="login"><a href="#" class="button">Login</a></button>
+			</center>
+		</nav>
+	</header>
+	<center>
+		<!-- title -->
+		<h1>Facebook: Capture The Flag</h1>
+		<h2>Question Submission</h2>
+	</center>
+	<!-- Explaination -->
+	<div id="rules" class="ctf-container">
+		<h2>Explaination</h2>
+		<p>
+		<strong>Welcome!</strong> Here you can submit questions and answers to contribute to the testbank that will aid others in Facebook CTF.
+		</p>
+		<p>1. Type your questions and answers.</p>
+		<p>2. Indicate the worth of the questions.</p>
+		<p>3. Upload files with the necessary components.</p>
+		<p>4. Finally, list the necessary steps in order to fully complete the answers.</p>
+	</div>
+	<!-- Form for users to submit their questions -->
+	<div id="form" class="ctf-container">
+		<form action="input.php" method="POST">
+			<label>Question</label><br/>
+			<input type="text" id="question" name="ctf-question" class="long-input" placeholder="What is CTF?">
+			<br/><br/>
+			<label>Answer</label><br/>
+			<input type="text" id="answer" name="ctf-answer" class="long-input" placeholder="Capture the flag">
+			<br/><br/>
+			<label>Points</label><br/>
+			<input type="text" id="points" name="ctf-points" class="short-input" placeholder="10" maxlength="3"> 
+			<br/><br/>
+			<label>Hint Deductions</label><br/>
+			<input type="text" id="hint-deductions" name="ctf-hint-deductions" class="short-input" placeholder="2" maxlength="3">
+			<br/><br/>
+			<form action="" method="POST" enctype="multipart/form-data">
+				<label>Link</label><br/>
+				<input type="file" name="fileUpload">
+				<!--<input type="text" id="" name="" class="input" placeholder="http://mylink.com">
+				<input type="submit" id="upload-button" value="Upload" name="submit">-->
+				<br/>
+				<label>Link</label><br/>
+				<input type="file" name="fileUpload2">
+			</form>
+			<br/>
+			<label>Steps</label><br/>
+			<textarea type="text" id="steps" name="ctf-steps" placeholder="1. &#10;2. &#10;3."></textarea>
+			<br/><br/>
+			<center><input type="submit" id="submit-button" value="Submit"></center>
+		</form>
+	</div>
+	<footer id="footer">
+		<center><i class="fa fa-copyright" aria-hidden="true"></i> 2016 Computer Information Systems</center>
+	</footer>
+</body>
+</html>

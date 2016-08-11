@@ -1,0 +1,230 @@
+/*
+Meh ones:
+font-family: 'Chathura', sans-serif;
+font-family: 'Orbitron', sans-serif;
+
+Good ones:
+font-family: 'Bungee Hairline', cursive;
+font-family: 'Aldrich', sans-serif;
+*/
+
+/*		
+ *		Initial settings
+ */
+
+html {
+	height: 100%;
+} 
+ 
+body {
+	background: url(images/world-map.png) top center no-repeat fixed;
+  background-size: auto 100vh;
+	background-color: #111e23;
+	color: #cff8fa;
+	font-family: 'Aldrich', sans-serif;
+	font-size: 1.5em;
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+}
+
+h1 {
+	color: #21b4ba;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 600;
+	font-size: 4em;
+	padding-top: 25px;
+	text-transform: uppercase;
+}
+
+h2, h3 {
+	color: #21b4ba;
+}
+
+/*
+ *	Nav bar
+ */
+
+#nav-bar {
+	background-color:white;
+	color: black;
+	width:100%;
+	padding: 3px 10px 3px 10px;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+#nav-bar:a {
+	padding: 0 25px 0 25px;
+}
+
+#home-page-icon {
+	color: black;
+}
+
+#home-page-icon:hover {
+	color: gray;
+	transition: ease color 0.4s;
+}
+
+#login, #register {
+	background-color: lightgray;
+	border: 1px solid black;
+	border-radius: 3px;
+	margin-top: 4px;
+	padding: 0 10px 0 10px;
+}
+
+#login {
+	position:fixed;
+	right: 125px;
+}
+
+#register {
+	position: fixed;
+	right: 10px;
+}
+
+.button {
+	color: black;
+	text-transform: uppercase;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 900;
+}
+
+#login:a {
+	background-color: gray;
+	color: white;
+	text-decoration: none;
+	transition: ease background-color 0.5s;
+}
+
+/*
+ *	Containers
+ */
+
+.content {
+	
+}
+ 
+.ctf-container {
+	background-color: #13242b;
+  border: 2px solid #cff8fa;
+  border-radius: 4px;
+  position: relative;
+  padding: 33px 150px 33px 150px;
+  z-index: 1;
+}
+
+.ctf-container:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  border: 2px solid #21b4ba;
+  z-index: -1;
+}
+
+#form {
+	height: 33%;
+	width: 50%;
+	margin: 50px auto 50px auto;
+  position: relative;
+  padding: 33px 150px 33px 150px;
+  z-index: 1;
+}
+
+#rules {
+	width: 20%;
+	position: absolute;
+	top: 215px;
+	left: 25px;
+	padding: 25px;
+}
+
+/*
+ *	Form
+ */
+
+input[type="text"] {
+	background-color: transparent;
+	border: 1px solid #21b4ba;
+	border-radius: 4px;
+	color: white;
+	padding: 2px 5px 2px 5px;
+} 
+
+label {
+	text-transform: uppercase;
+}
+
+.long-input {
+	width: 100%;
+}
+
+.short-input {
+	width: 40px;
+}
+
+#steps {
+	background-color: transparent;
+	border: 1px solid #21b4ba;
+	border-radius: 4px;
+	color: white;
+	padding: 2px 5px 2px 5px;
+	width: 100%;
+	height: 133px;
+}
+ 
+#submit-button {
+	background-color: transparent;
+	border: 1px solid red;
+	border-radius: 4px;
+	color: white;
+	padding: 3px 10px 3px 10px;
+	text-transform: uppercase;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 900;
+}
+
+#submit-button:hover {
+	background-color: #990000;
+	transition: ease background-color 0.5s;
+}
+
+/*
+ *	Buttons
+ */
+
+button {
+	border-radius: 4px;
+	padding: 3px 10px 3px 10px;
+	text-transform: uppercase;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 900;
+}
+ 
+#upload-button {
+	background-color: transparent;
+	border: 1px solid #ead44d;
+	border-radius: 4px;
+	color: white;
+	margin-left: 10px;
+	padding: 0 10px 0 10px;
+}
+ 
+#upload-button:hover {
+	background-color: #8c7f2e;
+	transition: ease background-color 0.5s;
+}
+ 
+ /*
+  *		Footer
+	*/
+
+#footer {
+	padding-bottom:10px;
+}
