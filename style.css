@@ -23,7 +23,7 @@ body {
 	color: #cff8fa;
 	font-family: 'Aldrich', sans-serif;
 	font-size: 1.5em;
-	padding: 0;
+	padding: 50px 0 0 0;
 	margin: 0;
 	min-height: 100%;
 }
@@ -49,14 +49,28 @@ h2, h3 {
 	background-color:white;
 	color: black;
 	width:100%;
-	padding: 3px 10px 3px 10px;
 	position: fixed;
 	top: 0;
 	z-index: 2;
 }
 
-#nav-bar:a {
-	padding: 0 25px 0 25px;
+#nav-title {
+	color: red;
+}
+
+#nav-title:hover {
+	color: pink;
+	transition: ease color 0.5s;
+}
+
+.nav-link {
+	color: black;
+	font-family: 'Aldrich', sans-serif;
+}
+
+.nav-link:hover {
+	color: grey;
+	transition: ease color 0.5s;
 }
 
 #home-page-icon {
@@ -78,12 +92,14 @@ h2, h3 {
 
 #login {
 	position:fixed;
-	right: 125px;
+	right: 135px;
+	top: 10px;
 }
 
 #register {
 	position: fixed;
-	right: 10px;
+	right: 20px;
+	top: 10px;
 }
 
 .button {
@@ -98,6 +114,45 @@ h2, h3 {
 	color: white;
 	text-decoration: none;
 	transition: ease background-color 0.5s;
+}
+
+/*
+ *	Login
+ */
+ 
+  #black_overlay {
+     background-color: #333;
+     left: 0;
+     opacity: 0.8;
+     position: absolute;
+     top: 0;
+     visibility: hidden;
+     z-index: 50;
+}
+
+  .added  {
+    width:320px;
+    height:338px;
+    border:2px solid #a5a5a5;
+		color: black;
+    padding:20px;
+    background-color:#dfdfdf;
+    border-radius:3px;
+    display:none;
+    text-align:center;
+    z-index:999;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+	}
+	
+	.close {
+    float: right;
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    cursor: pointer;
 }
 
 /*
@@ -137,10 +192,18 @@ h2, h3 {
   z-index: 1;
 }
 
+#front-page-buttons {
+	width: 50%;
+	height: 25%;
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
 #rules {
 	width: 20%;
 	position: absolute;
-	top: 215px;
+	top: 265px;
 	left: 25px;
 	padding: 25px;
 }
@@ -178,6 +241,57 @@ label {
 	width: 100%;
 	height: 133px;
 }
+
+/*
+ *	Buttons
+ */
+
+#button {
+	border-radius: 4px;
+	padding: 3px 10px 3px 10px;
+	text-transform: uppercase;
+	font-family: 'Bungee Hairline', cursive;
+	font-weight: 900;
+}
+
+.front-button {
+	color: white;
+} 
+
+.front-button:hover {
+	color:white;
+	text-decoration: none;
+}
+ 
+#front-login {
+	background-color: transparent;
+	border: 1px solid #ead44d;
+	border-radius: 4px;
+	color: white;
+	font-size: 225%;
+	margin: 0 15px 0 15px;
+	padding: 0 15px 0 15px;
+} 
+
+#front-login:hover {
+	background-color: #8c7f2e;
+	transition: ease color 0.5s;
+}
+
+#front-register {
+	background-color: transparent;
+	border: 1px solid #ead44d;
+	border-radius: 4px;
+	color: white;
+	font-size: 225%;
+	margin: 0 15px 0 15px;
+	padding: 0 15px 0 15px;
+}
+ 
+#front-register:hover {
+		background-color: #8c7f2e;
+	transition: ease color 0.5s;
+} 
  
 #submit-button {
 	background-color: transparent;
@@ -193,19 +307,7 @@ label {
 #submit-button:hover {
 	background-color: #990000;
 	transition: ease background-color 0.5s;
-}
-
-/*
- *	Buttons
- */
-
-button {
-	border-radius: 4px;
-	padding: 3px 10px 3px 10px;
-	text-transform: uppercase;
-	font-family: 'Bungee Hairline', cursive;
-	font-weight: 900;
-}
+} 
  
 #upload-button {
 	background-color: transparent;
@@ -227,4 +329,11 @@ button {
 
 #footer {
 	padding-bottom:10px;
+}
+
+.inactiveLink {
+	color: grey;
+	text-decoration: line-through;
+   pointer-events: none;
+   cursor: default;
 }
