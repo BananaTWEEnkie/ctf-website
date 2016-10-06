@@ -18,7 +18,7 @@ html {
  
 body {
 	background: url(images/world-map.png) top center no-repeat fixed;
-  background-size: auto 100vh;
+	background-size: auto 100vh;
 	background-color: #111e23;
 	color: #cff8fa;
 	font-family: 'Aldrich', sans-serif;
@@ -275,7 +275,7 @@ label {
 
 #front-login:hover {
 	background-color: #8c7f2e;
-	transition: ease color 0.5s;
+	transition: ease background-color 0.5s;
 }
 
 #front-register {
@@ -290,7 +290,7 @@ label {
  
 #front-register:hover {
 		background-color: #8c7f2e;
-	transition: ease color 0.5s;
+	transition: ease background-color 0.5s;
 } 
  
 #submit-button {
